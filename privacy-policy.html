@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Bysolutions Genv</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.0.0/tabler-icons.min.css" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #f5f5f3;
+      --surface: #ffffff;
+      --surface-1: #f1efe8;
+      --text-primary: #1a1a18;
+      --text-secondary: #5f5e5a;
+      --text-muted: #888780;
+      --text-accent: #185fa5;
+      --bg-accent: #e6f1fb;
+      --border-accent: #b5d4f4;
+      --bg-success: #eaf3de;
+      --text-success: #3b6d11;
+      --border-success: #c0dd97;
+      --border: rgba(0,0,0,0.1);
+      --radius: 8px;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #1a1a18;
+        --surface: #2c2c2a;
+        --surface-1: #232321;
+        --text-primary: #f1efe8;
+        --text-secondary: #b4b2a9;
+        --text-muted: #888780;
+        --text-accent: #85b7eb;
+        --bg-accent: #0c447c;
+        --border-accent: #185fa5;
+        --bg-success: #27500a;
+        --text-success: #c0dd97;
+        --border-success: #3b6d11;
+        --border: rgba(255,255,255,0.1);
+      }
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text-primary);
+      line-height: 1.7;
+      min-height: 100vh;
+      padding: 2rem 1rem;
+    }
+
+    .pp-wrap {
+      max-width: 760px;
+      margin: 0 auto;
+      background: var(--surface);
+      border-radius: 16px;
+      border: 0.5px solid var(--border);
+      padding: 2.5rem 2rem;
+    }
+
+    .pp-brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 2.5rem;
+    }
+
+    .pp-logo {
+      width: 36px;
+      height: 36px;
+      border-radius: 8px;
+      background: var(--bg-accent);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .pp-logo i { font-size: 20px; color: var(--text-accent); }
+
+    .pp-brand-name {
+      font-size: 18px;
+      font-weight: 500;
+      color: var(--text-primary);
+    }
+
+    .pp-hero {
+      margin-bottom: 2.5rem;
+      padding-bottom: 2rem;
+      border-bottom: 0.5px solid var(--border);
+    }
+
+    .pp-hero h1 {
+      font-size: 28px;
+      font-weight: 500;
+      color: var(--text-primary);
+      margin-bottom: 0.4rem;
+    }
+
+    .pp-hero p {
+      font-size: 14px;
+      color: var(--text-muted);
+    }
+
+    .pp-hero a { color: var(--text-accent); text-decoration: none; }
+    .pp-hero a:hover { text-decoration: underline; }
+
+    .pp-section { margin-bottom: 2rem; }
+
+    .pp-section-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 0.75rem;
+    }
+
+    .pp-num {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: var(--bg-accent);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      font-weight: 500;
+      color: var(--text-accent);
+      flex-shrink: 0;
+    }
+
+    .pp-section h2 {
+      font-size: 16px;
+      font-weight: 500;
+      color: var(--text-primary);
+    }
+
+    .pp-section p {
+      font-size: 15px;
+      color: var(--text-secondary);
+      line-height: 1.7;
+      margin-left: 38px;
+    }
+
+    .pp-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--bg-success);
+      color: var(--text-success);
+      font-size: 13px;
+      padding: 3px 10px;
+      border-radius: var(--radius);
+      border: 0.5px solid var(--border-success);
+      margin-left: 38px;
+    }
+
+    .pp-contact-card {
+      margin-left: 38px;
+      background: var(--surface-1);
+      border: 0.5px solid var(--border);
+      border-radius: 12px;
+      padding: 0.9rem 1.1rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .pp-contact-card i { font-size: 18px; color: var(--text-muted); }
+
+    .pp-contact-card a {
+      font-size: 14px;
+      color: var(--text-accent);
+      text-decoration: none;
+    }
+
+    .pp-contact-card a:hover { text-decoration: underline; }
+
+    .pp-divider {
+      height: 0.5px;
+      background: var(--border);
+      margin: 1.5rem 0;
+    }
+
+    .pp-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 2.5rem;
+      padding-top: 1.5rem;
+      border-top: 0.5px solid var(--border);
+    }
+
+    .pp-footer-left { font-size: 13px; color: var(--text-muted); }
+
+    .pp-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 12px;
+      color: var(--text-muted);
+      background: var(--surface-1);
+      border: 0.5px solid var(--border);
+      border-radius: var(--radius);
+      padding: 4px 10px;
+    }
+
+    .mb-75 { margin-bottom: 0.75rem; }
+  </style>
+</head>
+<body>
+  <div class="pp-wrap">
+    <div class="pp-brand">
+      <div class="pp-logo"><i class="ti ti-shield-check"></i></div>
+      <span class="pp-brand-name">Bysolutions Genv</span>
+    </div>
+
+    <div class="pp-hero">
+      <h1>Privacy policy</h1>
+      <p>Last updated: June 29, 2026 &nbsp;·&nbsp; Applies to <a href="https://ymgenv.github.io/bysolutions">ymgenv.github.io/bysolutions</a></p>
+    </div>
+
+    <div class="pp-section">
+      <div class="pp-section-header">
+        <div class="pp-num">1</div>
+        <h2>Data we collect</h2>
+      </div>
+      <p class="mb-75">We collect the following personal information:</p>
+      <span class="pp-tag"><i class="ti ti-mail" style="font-size:14px;"></i> Email address</span>
+    </div>
+
+    <div class="pp-divider"></div>
+
+    <div class="pp-section">
+      <div class="pp-section-header">
+        <div class="pp-num">2</div>
+        <h2>Use of data</h2>
+      </div>
+      <p>Collected data is used to provide services, improve the website, and for analytics purposes.</p>
+    </div>
+
+    <div class="pp-divider"></div>
+
+    <div class="pp-section">
+      <div class="pp-section-header">
+        <div class="pp-num">3</div>
+        <h2>Data protection</h2>
+      </div>
+      <p>We implement technical and organizational measures to protect your data against unauthorized access, loss, or misuse.</p>
+    </div>
+
+    <div class="pp-divider"></div>
+
+    <div class="pp-section">
+      <div class="pp-section-header">
+        <div class="pp-num">4</div>
+        <h2>Sharing data with third parties</h2>
+      </div>
+      <p>We do not share your data with third parties, except as required by law.</p>
+    </div>
+
+    <div class="pp-divider"></div>
+
+    <div class="pp-section">
+      <div class="pp-section-header">
+        <div class="pp-num">5</div>
+        <h2>Your rights</h2>
+      </div>
+      <p class="mb-75">You may request access, correction, or deletion of your data at any time. Contact us to exercise your rights:</p>
+      <div class="pp-contact-card">
+        <i class="ti ti-mail"></i>
+        <a href="mailto:bysolutionsymgenv@gmail.com">bysolutionsymgenv@gmail.com</a>
+      </div>
+    </div>
+
+    <div class="pp-divider"></div>
+
+    <div class="pp-section">
+      <div class="pp-section-header">
+        <div class="pp-num">6</div>
+        <h2>Contact us</h2>
+      </div>
+      <p class="mb-75">If you have any questions about this policy, reach out to us:</p>
+      <div class="pp-contact-card">
+        <i class="ti ti-mail"></i>
+        <a href="mailto:bysolutionsymgenv@gmail.com">bysolutionsymgenv@gmail.com</a>
+      </div>
+    </div>
+
+    <div class="pp-footer">
+      <span class="pp-footer-left">© 2026 Bysolutions Genv. All rights reserved.</span>
+      <span class="pp-badge"><i class="ti ti-lock" style="font-size:13px;"></i> Your data is protected</span>
+    </div>
+  </div>
+</body>
+</html>
